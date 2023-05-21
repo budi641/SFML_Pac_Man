@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\GameManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Entity\Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Entity\Pacman\Pacman.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Entity\Snack\Snack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Animation\Animator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Animation\Animation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Pathfinding\Pathfinding.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Entity\Enemy\Enemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Debugger\Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Entity\Enemy\Blinky.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Entity\Enemy\Pinky.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Entity\Enemy\Inky.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Entity\Enemy\Clyde.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Audio\AudioManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\States\State.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\States\GameState\GameState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\States\MainMenuState\MainMenuState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\UI\Button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\States\GameOverState\GameOverState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\Tile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\GameManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Entity\Entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Entity\Pacman\Pacman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Entity\Snack\Snack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Animation\Animator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Animation\Animation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Pathfinding\Pathfinding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Entity\Enemy\Enemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Pathfinding\Node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Debugger\Debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Entity\Enemy\Blinky.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Entity\Enemy\Pinky.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Entity\Enemy\Inky.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Entity\Enemy\Clyde.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Audio\AudioManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Audio\AudioAssets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\States\State.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\States\GameState\GameState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\States\MainMenuState\MainMenuState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\UI\Button.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\States\GameOverState\GameOverState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\OOP_Final_Project\v17\fileList.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include=".vs\Pacman-Clone\v17\fileList.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\PacManSprites.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\pac-man-logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\ready-gameover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Resources\Sound\death_1.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Resources\Sound\death_2.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Resources\Sound\eat_fruit.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Resources\Sound\eat_ghost.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Resources\Sound\extend.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Resources\Sound\game_start.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Resources\Sound\intermission.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Resources\Sound\munch_1.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Resources\Sound\munch_2.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Resources\Sound\power_pellet.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Resources\Sound\retreating.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Resources\Sound\siren_1.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Resources\Sound\siren_2.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Resources\Sound\siren_3.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Resources\Sound\siren_4.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Resources\Sound\siren_5.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Resources\Sound\munch.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+  </ItemGroup>
+</Project>

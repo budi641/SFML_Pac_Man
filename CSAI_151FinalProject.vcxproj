@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{B0E2D26A-FF94-486F-8756-B70631B85FF8}</ProjectGuid>
+    <RootNamespace>CSAI_151FinalProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>CSAI_151FinalProject</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\OneDrive\DOCUMENTOS\Personal-Projects\Pacman-Clone\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\OneDrive\DOCUMENTOS\Personal-Projects\Pacman-Clone\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-window-d.lib;sfml-graphics-d.lib;sfml-network-d.lib;sfml-audio-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-window-d.lib;sfml-graphics-d.lib;sfml-network-d.lib;sfml-audio-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\OneDrive\DOCUMENTOS\Personal-Projects\Pacman-Clone\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\OneDrive\DOCUMENTOS\Personal-Projects\Pacman-Clone\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system.lib;sfml-window.lib;sfml-graphics.lib;sfml-network.lib;sfml-audio.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system.lib;sfml-window.lib;sfml-graphics.lib;sfml-network.lib;sfml-audio.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\States\GameOverState\GameOverState.cpp" />
+    <ClCompile Include="Src\States\MainMenuState\MainMenuState.cpp" />
+    <ClCompile Include="Src\States\GameState\GameState.cpp" />
+    <ClCompile Include="Src\Audio\AudioManager.cpp" />
+    <ClCompile Include="Src\Entity\Enemy\Clyde.cpp" />
+    <ClCompile Include="Src\Entity\Enemy\Inky.cpp" />
+    <ClCompile Include="Src\Entity\Enemy\Pinky.cpp" />
+    <ClCompile Include="Src\Entity\Enemy\Blinky.cpp" />
+    <ClCompile Include="Src\Debugger\Debug.cpp" />
+    <ClCompile Include="Src\Entity\Enemy\Enemy.cpp" />
+    <ClCompile Include="Src\Pathfinding\Pathfinding.cpp" />
+    <ClCompile Include="Src\Animation\Animation.cpp" />
+    <ClCompile Include="Src\Animation\Animator.cpp" />
+    <ClCompile Include="Src\Entity\Entity.cpp" />
+    <ClCompile Include="Src\GameManager.cpp" />
+    <ClCompile Include="Src\main.cpp" />
+    <ClCompile Include="Src\Entity\Pacman\Pacman.cpp" />
+    <ClCompile Include="Src\Entity\Snack\Snack.cpp" />
+    <ClCompile Include="Src\States\State.cpp" />
+    <ClCompile Include="Src\UI\Button.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\States\GameOverState\GameOverState.h" />
+    <ClInclude Include="Src\States\MainMenuState\MainMenuState.h" />
+    <ClInclude Include="Src\States\GameState\GameState.h" />
+    <ClInclude Include="Src\Audio\AudioAssets.h" />
+    <ClInclude Include="Src\Audio\AudioManager.h" />
+    <ClInclude Include="Src\Entity\Enemy\Clyde.h" />
+    <ClInclude Include="Src\Entity\Enemy\Inky.h" />
+    <ClInclude Include="Src\Entity\Enemy\Pinky.h" />
+    <ClInclude Include="Src\Entity\Enemy\Blinky.h" />
+    <ClInclude Include="Src\Debugger\Debug.h" />
+    <ClInclude Include="Src\Entity\Enemy\Enemy.h" />
+    <ClInclude Include="Src\Pathfinding\Node.h" />
+    <ClInclude Include="Src\Pathfinding\Pathfinding.h" />
+    <ClInclude Include="Src\Animation\Animation.h" />
+    <ClInclude Include="Src\Animation\Animator.h" />
+    <ClInclude Include="Src\Common.h" />
+    <ClInclude Include="Src\Entity\Entity.h" />
+    <ClInclude Include="Src\GameManager.h" />
+    <ClInclude Include="Src\Entity\Pacman\Pacman.h" />
+    <ClInclude Include="Src\Entity\Snack\Snack.h" />
+    <ClInclude Include="Src\Tile.h" />
+    <ClInclude Include="Src\States\State.h" />
+    <ClInclude Include="Src\UI\Button.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\OOP_Final_Project\v17\fileList.bin" />
+    <None Include=".vs\Pacman-Clone\v17\fileList.bin" />
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\pac-man-logo.png" />
+    <Image Include="Resources\PacManSprites.png" />
+    <Image Include="Resources\ready-gameover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Resources\Sound\death_1.wav" />
+    <Media Include="Resources\Sound\death_2.wav" />
+    <Media Include="Resources\Sound\eat_fruit.wav" />
+    <Media Include="Resources\Sound\eat_ghost.wav" />
+    <Media Include="Resources\Sound\extend.wav" />
+    <Media Include="Resources\Sound\game_start.wav" />
+    <Media Include="Resources\Sound\intermission.wav" />
+    <Media Include="Resources\Sound\munch.wav" />
+    <Media Include="Resources\Sound\munch_1.wav" />
+    <Media Include="Resources\Sound\munch_2.wav" />
+    <Media Include="Resources\Sound\power_pellet.wav" />
+    <Media Include="Resources\Sound\retreating.wav" />
+    <Media Include="Resources\Sound\siren_1.wav" />
+    <Media Include="Resources\Sound\siren_2.wav" />
+    <Media Include="Resources\Sound\siren_3.wav" />
+    <Media Include="Resources\Sound\siren_4.wav" />
+    <Media Include="Resources\Sound\siren_5.wav" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
