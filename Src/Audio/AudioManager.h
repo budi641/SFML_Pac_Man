@@ -3,36 +3,37 @@
 #include "SFML/Audio.hpp"
 #include "AudioAssets.h"
 
-
-//ATTENTION!! I know there is much better ways to do a audio manager, but i am feeling really lazy and i just want to finish this project as soon as possible, so DONT JUDGE ME...thanks
+// AudioManager class responsible for managing game audio
 class AudioManager
 {
 public:
-	AudioManager();
-	void PlaySound(Sounds soundType, bool loop, int volume);
-	void StopSound(Sounds soundType = Sounds::None);
-	bool IsPlayingAudio(Sounds soundType);
+    AudioManager();
+
+    // Play a sound with the specified sound type, loop, and volume
+    void PlaySound(Sounds soundType, bool loop, int volume);
+
+    // Stop playing the sound with the specified sound type, or stop all sounds if no sound type is provided
+    void StopSound(Sounds soundType = Sounds::None);
+
+    // Check if a sound with the specified sound type is currently playing
+    bool IsPlayingAudio(Sounds soundType);
+
 private:
+    // Sound buffers
+    sf::SoundBuffer gameStartBuffer;
+    sf::SoundBuffer munchSoundBuffer;
+    sf::SoundBuffer powerSnackBuffer;
+    sf::SoundBuffer eatGhostBuffer;
+    sf::SoundBuffer deathBuffer;
+    sf::SoundBuffer sirenBuffer;
+    sf::SoundBuffer retreatingBuffer;
 
-	sf::SoundBuffer gameStartBuffer;
-	sf::Sound gameStartSound;
-
-	sf::SoundBuffer munchSoundBuffer;
-	sf::Sound munchSound;
-
-	sf::SoundBuffer powerSnackBuffer;
-	sf::Sound powerSnackSound;
-
-	sf::SoundBuffer eatGhostBuffer;
-	sf::Sound eatGhostSound;
-
-	sf::SoundBuffer deathBuffer;
-	sf::Sound deathSound;
-
-	sf::SoundBuffer sirenBuffer;
-	sf::Sound sirenSound;
-
-	sf::SoundBuffer retreatingBuffer;
-	sf::Sound retreatingSound;
+    // Sound objects
+    sf::Sound gameStartSound;
+    sf::Sound munchSound;
+    sf::Sound powerSnackSound;
+    sf::Sound eatGhostSound;
+    sf::Sound deathSound;
+    sf::Sound sirenSound;
+    sf::Sound retreatingSound;
 };
-

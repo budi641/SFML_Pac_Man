@@ -4,7 +4,7 @@
 Snack::Snack(SnackType type, sf::Vector2i gridPos, GameState* gameState)
     : Entity(gameState, Entities::NotDefined)
 {
-	animator = new Animator(&body);
+    animator = new Animator(&body);
 
     snackType = type;
     if (type == SmallSnack)
@@ -26,7 +26,7 @@ Snack::Snack(SnackType type, sf::Vector2i gridPos, GameState* gameState)
 
 void Snack::Update(const float& deltaTime)
 {
-    if(snackType == BigSnack)
+    if (snackType == BigSnack)
         animator->Update(deltaTime);
 }
 
@@ -35,13 +35,13 @@ void Snack::Draw(sf::RenderWindow& rw)
     rw.draw(body);
 }
 
+// Function to set up the animation for the big snack
 void Snack::SetupAnimation()
 {
-	sf::Texture spriteOn, spriteOff;
+    sf::Texture spriteOn, spriteOff;
     spriteOn.loadFromFile("Resources/PacManSprites.png", sf::IntRect(233, 240, 8, 8));
     spriteOff.loadFromFile("Resources/PacManSprites.png", sf::IntRect(230, 160, 8, 8));
-    std::vector<sf::Texture> leftAnimTextures{ spriteOff, spriteOn };
+    std::vector<sf::Texture> flickerAnimTextures{ spriteOff, spriteOn };
 
-
-	bigSnackFlickerAnimation = new Animation(leftAnimTextures, true, 0.2f);
+    bigSnackFlickerAnimation = new Animation(flickerAnimTextures, true, 0.2f);
 }

@@ -4,8 +4,9 @@
 #include "../GameState/GameState.h"
 
 MainMenuState::MainMenuState(sf::RenderWindow* window, std::stack<State*>* states, GameManager* gameManager)
-	: State(window, states, gameManager) 
+	: State(window, states, gameManager)
 {
+	// Initialize the "New Game" button
 	this->buttons["GAME_STATE"] = new Button(
 		window->getView().getCenter().x - 100, 480.f,
 		200.f, 53.f,
@@ -13,6 +14,7 @@ MainMenuState::MainMenuState(sf::RenderWindow* window, std::stack<State*>* state
 		sf::Color(130, 130, 130, 255), sf::Color(250, 250, 250, 250), sf::Color(20, 20, 20, 50)
 	);
 
+	// Load and configure the game logo texture
 	if (mapTexture.loadFromFile("Resources/pac-man-logo.png"))
 	{
 		mapTexture.setSmooth(false);
@@ -24,6 +26,7 @@ MainMenuState::MainMenuState(sf::RenderWindow* window, std::stack<State*>* state
 
 MainMenuState::~MainMenuState()
 {
+	// Clean up allocated memory for buttons
 	auto it = this->buttons.begin();
 	for (it = this->buttons.begin(); it != this->buttons.end(); ++it)
 	{
@@ -33,18 +36,21 @@ MainMenuState::~MainMenuState()
 
 void MainMenuState::Update(const float& deltaTime)
 {
+	// Update button states based on mouse position
 	for (auto& it : this->buttons)
 	{
 		it.second->update(this->window->mapPixelToCoords(sf::Mouse::getPosition(*this->window)));
 	}
 
-	//New game
+	// Handle button actions
+
+	// New game button
 	if (this->buttons["GAME_STATE"]->isPressed())
 	{
-		this->states->push(new GameState(window, states, gameManager));
+		this->states->push(new GameState(window, states, gameManager));  // Push a new GameState onto the stack
 	}
 
-	Draw();
+	Draw();  // Draw the main menu state
 }
 
 void MainMenuState::Draw()

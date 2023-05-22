@@ -3,32 +3,37 @@
 #include "../States/GameState/GameState.h"
 #include "../Entity/Entity.h"
 
+// Structure representing a node in the pathfinding grid
 struct sNode
 {
-	sNode* parent;
-	GameState* gameState;
-	Directions ignoreDirection = Directions::None;
-	sf::Vector2i pos;
+	sNode* parent;                  // Pointer to the parent node
+	GameState* gameState;           // Pointer to the game state
+	Directions ignoreDirection;     // Direction to ignore when generating neighbors
+	sf::Vector2i pos;               // Position of the node in the grid
 
-	int gCost = 0;
-	int hCost = 0;
-	int fCost() { return (gCost + hCost); }
+	int gCost = 0;                  // Cost from the start node to this node
+	int hCost = 0;                  // Heuristic cost from this node to the target node
+	int fCost() { return (gCost + hCost); }    // Total cost of the node (gCost + hCost)
 
-	bool visited = false;
-	bool walkable = true;
+	bool visited = false;           // Flag indicating if the node has been visited
+	bool walkable = true;           // Flag indicating if the node is walkable
 
+	// Constructor
 	sNode(sf::Vector2i pos, GameState* gameState) { this->pos = pos; this->gameState = gameState; }
 
+	// Set the parent node
 	void SetParent(sNode p)
 	{
 		parent = new sNode(p);
 	}
 
+	// Destructor
 	~sNode()
 	{
-		//delete parent
+		// Delete the parent node
 	}
 
+	// Get the neighboring nodes
 	std::vector<sNode> GetNeighbours()
 	{
 		std::vector<sNode> neighbours;
@@ -52,6 +57,7 @@ struct sNode
 		return neighbours;
 	}
 
+	// Create a node at the specified position
 	sNode CreateNode(sf::Vector2i pos)
 	{
 		sTile* tile = &gameState->tileArray[pos.x][pos.y];

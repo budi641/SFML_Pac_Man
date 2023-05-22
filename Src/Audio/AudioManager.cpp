@@ -4,31 +4,28 @@
 
 AudioManager::AudioManager()
 {
+    // Load sound buffers from file
     munchSoundBuffer.loadFromFile(AUDIO_MUNCH);
-    munchSound.setBuffer(munchSoundBuffer);
-
     powerSnackBuffer.loadFromFile(AUDIO_POWER_SNACK);
-    powerSnackSound.setBuffer(powerSnackBuffer);
-
     eatGhostBuffer.loadFromFile(AUDIO_EAT_GHOST);
-    eatGhostSound.setBuffer(eatGhostBuffer);
-
     deathBuffer.loadFromFile(AUDIO_DEATH_1);
-    deathSound.setBuffer(deathBuffer);
-
     gameStartBuffer.loadFromFile(AUDIO_GAME_START);
-    gameStartSound.setBuffer(gameStartBuffer);
-
     sirenBuffer.loadFromFile(AUDIO_SIREN);
-    sirenSound.setBuffer(sirenBuffer);
-
     retreatingBuffer.loadFromFile(AUDIO_RETREATING);
+
+    // Set the loaded sound buffers to the respective sound objects
+    munchSound.setBuffer(munchSoundBuffer);
+    powerSnackSound.setBuffer(powerSnackBuffer);
+    eatGhostSound.setBuffer(eatGhostBuffer);
+    deathSound.setBuffer(deathBuffer);
+    gameStartSound.setBuffer(gameStartBuffer);
+    sirenSound.setBuffer(sirenBuffer);
     retreatingSound.setBuffer(retreatingBuffer);
 }
 
 void AudioManager::PlaySound(Sounds soundType, bool loop, int volume)
 {
-    //new way
+    // Play the corresponding sound based on the sound type
     switch (soundType)
     {
     case Sounds::PowerSnack:
@@ -67,11 +64,11 @@ void AudioManager::PlaySound(Sounds soundType, bool loop, int volume)
         retreatingSound.play();
         break;
     }
-
 }
 
 void AudioManager::StopSound(Sounds soundType)
 {
+    // Stop the corresponding sound based on the sound type
     switch (soundType)
     {
     case Sounds::PowerSnack:
@@ -96,6 +93,7 @@ void AudioManager::StopSound(Sounds soundType)
         retreatingSound.stop();
         break;
     case Sounds::None:
+        // Stop all sounds if the sound type is "None"
         gameStartSound.stop();
         munchSound.stop();
         deathSound.stop();
@@ -109,6 +107,7 @@ void AudioManager::StopSound(Sounds soundType)
 
 bool AudioManager::IsPlayingAudio(Sounds soundType)
 {
+    // Check if the corresponding sound is currently playing based on the sound type
     switch (soundType)
     {
     case Sounds::PowerSnack:

@@ -17,7 +17,6 @@
 
 #include "../MainMenuState/MainMenuState.h"
 
-//test
 #include <sstream>
 
 GameState::GameState(sf::RenderWindow* window, std::stack<State*>* states, GameManager* gameManager)

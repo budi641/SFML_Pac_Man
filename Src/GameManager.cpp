@@ -1,15 +1,18 @@
 #include "GameManager.h"
 #include "States/MainMenuState/MainMenuState.h"
 
+// Start the game manager
 void GameManager::StartGameManager()
 {
     window = new sf::RenderWindow();
     window->create(sf::VideoMode(1280, 720), "Mesh_Pacman", sf::Style::Default);
     //window->create(sf::VideoMode::getFullscreenModes()[0], "Pacman", sf::Style::Resize);
+
     aspectRatio = float(window->getSize().x) / float(window->getSize().y - 100);
     sf::View v(sf::Vector2f(400, 450), sf::Vector2f(800 * aspectRatio, 900));
     window->setView(v);
 
+    // Push the main menu state onto the stack
     states.push(new MainMenuState(window, &states, this));
 }
 
@@ -24,7 +27,7 @@ void GameManager::Update()
     {
         deltaTime = clock.restart().asSeconds();
 
-        //get input
+        // Get input
         sf::Event event;
         while (window->pollEvent(event))
         {
@@ -41,23 +44,24 @@ void GameManager::Update()
             }
         }
 
-        //handle states
+        // Handle states
         if (!this->states.empty())
         {
             this->states.top()->Update(deltaTime);
 
+            // Check if the current state wants to quit
             if (this->states.top()->GetQuit())
             {
+                // End the current state
                 this->states.top()->EndState();
                 delete this->states.top();
                 this->states.pop();
             }
         }
-        //Application end
+        // Application end
         else
         {
             this->window->close();
         }
-
     }
 }

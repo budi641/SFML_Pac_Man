@@ -1,39 +1,47 @@
 #pragma once
 
-#include<iostream>
-#include<ctime>
-#include<cstdlib>
-#include<sstream>
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+#include <sstream>
 
-#include"SFML\System.hpp"
-#include"SFML\Window.hpp"
-#include"SFML\Graphics.hpp"
-#include"SFML\Audio.hpp"
+#include "SFML\System.hpp"
+#include "SFML\Window.hpp"
+#include "SFML\Graphics.hpp"
+#include "SFML\Audio.hpp"
 
-enum button_states { BTN_IDLE = 0, BTN_HOVER, BTN_ACTIVE };
+// Button states enumeration
+enum button_states {
+    BTN_IDLE = 0,       // Button is idle (not interacted with)
+    BTN_HOVER,          // Button is being hovered over
+    BTN_ACTIVE          // Button is being clicked/activated
+};
 
 class Button
 {
 private:
-	short unsigned buttonState;
+    short unsigned buttonState;     // Current state of the button
 
-	sf::RectangleShape shape;
-	sf::Font font;
-	sf::Text text;
+    sf::RectangleShape shape;       // Shape of the button
+    sf::Font font;                  // Font for the button text
+    sf::Text text;                  // Text displayed on the button
 
-	sf::Color textIdleColor;
-	sf::Color textHoverColor;
-	sf::Color textActiveColor;
+    sf::Color textIdleColor;        // Color of the text when the button is idle
+    sf::Color textHoverColor;       // Color of the text when the button is being hovered over
+    sf::Color textActiveColor;      // Color of the text when the button is being clicked/activated
+
 public:
-	Button(float x, float y, float width, float height,
-		std::string text, unsigned character_size,
-		sf::Color text_idle_color, sf::Color text_hover_color, sf::Color text_active_color);
-	~Button();
+    Button(float x, float y, float width, float height,
+        std::string text, unsigned character_size,
+        sf::Color text_idle_color, sf::Color text_hover_color, sf::Color text_active_color);
+    ~Button();
 
-	//Accessors
-	const bool isPressed() const;
+    // Accessor to check if the button is pressed
+    const bool isPressed() const;
 
-	//Functions
-	void update(const sf::Vector2f mousePos);
-	void render(sf::RenderWindow* target);
+    // Update the button based on the mouse position
+    void update(const sf::Vector2f mousePos);
+
+    // Render the button to the target window
+    void render(sf::RenderWindow* target);
 };

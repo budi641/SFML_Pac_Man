@@ -1,4 +1,4 @@
-#include"Button.h"
+#include "Button.h"
 
 Button::Button(float x, float y, float width, float height,
 	std::string text, unsigned character_size,
@@ -6,10 +6,12 @@ Button::Button(float x, float y, float width, float height,
 {
 	this->buttonState = BTN_IDLE;
 
+	// Set up button shape
 	this->shape.setPosition(sf::Vector2f(x, y));
 	this->shape.setSize(sf::Vector2f(width, height));
 	this->shape.setFillColor(sf::Color::Transparent);
 
+	// Set up button text
 	font.loadFromFile("Fonts/Dosis-Light.ttf");
 	this->text.setFont(this->font);
 	this->text.setString(text);
@@ -20,6 +22,7 @@ Button::Button(float x, float y, float width, float height,
 		this->shape.getPosition().y + (this->shape.getGlobalBounds().height / 2.f) - this->text.getGlobalBounds().height / 1.5f
 	);
 
+	// Set up color states
 	this->textIdleColor = text_idle_color;
 	this->textHoverColor = text_hover_color;
 	this->textActiveColor = text_active_color;
@@ -32,6 +35,7 @@ Button::~Button()
 
 const bool Button::isPressed() const
 {
+	// Check if button is in active state
 	if (this->buttonState == BTN_ACTIVE)
 		return true;
 
@@ -40,21 +44,22 @@ const bool Button::isPressed() const
 
 void Button::update(const sf::Vector2f mousePos)
 {
-	//Idle
+	// Set button state to idle by default
 	this->buttonState = BTN_IDLE;
 
-	//Hover
+	// Check if mouse is hovering over the button
 	if (this->shape.getGlobalBounds().contains(mousePos))
 	{
 		this->buttonState = BTN_HOVER;
 
-		//Pressed
+		// Check if left mouse button is pressed
 		if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
 		{
 			this->buttonState = BTN_ACTIVE;
 		}
 	}
 
+	// Update text color based on button state
 	switch (this->buttonState)
 	{
 	case BTN_IDLE:
@@ -70,6 +75,7 @@ void Button::update(const sf::Vector2f mousePos)
 		break;
 
 	default:
+		// Set default color for unexpected state (Red for shape, Blue for text)
 		this->shape.setFillColor(sf::Color::Red);
 		this->text.setFillColor(sf::Color::Blue);
 		break;
@@ -78,6 +84,7 @@ void Button::update(const sf::Vector2f mousePos)
 
 void Button::render(sf::RenderWindow* target)
 {
+	// Draw the button shape and text
 	target->draw(this->shape);
 	target->draw(this->text);
 }
