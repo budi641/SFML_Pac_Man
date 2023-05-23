@@ -1,0 +1,63 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Pacman-Clone.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  GameOverState.cpp
+  MainMenuState.cpp
+D:\CSAI151_Final_Project\Src\Tile.h(12,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  GameState.cpp
+D:\CSAI151_Final_Project\Src\Tile.h(12,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  AudioManager.cpp
+D:\CSAI151_Final_Project\Src\Audio\AudioManager.cpp(36,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\CSAI151_Final_Project\Src\Audio\AudioManager.cpp(41,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\CSAI151_Final_Project\Src\Audio\AudioManager.cpp(46,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\CSAI151_Final_Project\Src\Audio\AudioManager.cpp(51,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\CSAI151_Final_Project\Src\Audio\AudioManager.cpp(56,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\CSAI151_Final_Project\Src\Audio\AudioManager.cpp(61,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\CSAI151_Final_Project\Src\Audio\AudioManager.cpp(66,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Clyde.cpp
+D:\CSAI151_Final_Project\Src\Tile.h(12,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  Inky.cpp
+D:\CSAI151_Final_Project\Src\Tile.h(12,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+D:\CSAI151_Final_Project\Src\Entity\Enemy\Inky.cpp(35,2): warning C4060: switch statement contains no 'case' or 'default' labels
+D:\CSAI151_Final_Project\Src\Entity\Enemy\Inky.cpp(23,2): warning C4102: 'Up': unreferenced label
+D:\CSAI151_Final_Project\Src\Entity\Enemy\Inky.cpp(26,2): warning C4102: 'Down': unreferenced label
+D:\CSAI151_Final_Project\Src\Entity\Enemy\Inky.cpp(29,2): warning C4102: 'Left': unreferenced label
+D:\CSAI151_Final_Project\Src\Entity\Enemy\Inky.cpp(32,2): warning C4102: 'Right': unreferenced label
+  Pinky.cpp
+D:\CSAI151_Final_Project\Src\Tile.h(12,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  Blinky.cpp
+D:\CSAI151_Final_Project\Src\Tile.h(12,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  Debug.cpp
+D:\CSAI151_Final_Project\Src\Tile.h(12,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  Enemy.cpp
+D:\CSAI151_Final_Project\Src\Tile.h(12,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+D:\CSAI151_Final_Project\Src\Entity\Enemy\Enemy.cpp(27,28): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+  Pathfinding.cpp
+D:\CSAI151_Final_Project\Src\Tile.h(12,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  Animation.cpp
+  Animator.cpp
+  Entity.cpp
+D:\CSAI151_Final_Project\Src\Tile.h(12,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  GameManager.cpp
+  main.cpp
+D:\CSAI151_Final_Project\Src\Tile.h(12,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  Pacman.cpp
+D:\CSAI151_Final_Project\Src\Tile.h(12,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+D:\CSAI151_Final_Project\Src\Entity\Pacman\Pacman.cpp(24,28): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Snack.cpp
+D:\CSAI151_Final_Project\Src\Tile.h(12,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  State.cpp
+  Button.cpp
+  Generating Code...
+D:\CSAI151_Final_Project\Src\Audio\AudioManager.cpp(136): warning C4715: 'AudioManager::IsPlayingAudio': not all control paths return a value
+  Pacman-Clone.vcxproj -> D:\CSAI151_Final_Project\x64\Debug\CSAI_151FinalProject.exe

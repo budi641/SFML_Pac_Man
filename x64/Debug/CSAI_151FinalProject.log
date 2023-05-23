@@ -1,0 +1,62 @@
+﻿  GameOverState.cpp
+  MainMenuState.cpp
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Tile.h(16,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  GameState.cpp
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Tile.h(16,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  AudioManager.cpp
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Audio\AudioManager.cpp(33,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Audio\AudioManager.cpp(38,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Audio\AudioManager.cpp(43,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Audio\AudioManager.cpp(48,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Audio\AudioManager.cpp(53,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Audio\AudioManager.cpp(58,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Audio\AudioManager.cpp(63,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Clyde.cpp
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Tile.h(16,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  Inky.cpp
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Tile.h(16,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Entity\Enemy\Inky.cpp(43,2): warning C4060: switch statement contains no 'case' or 'default' labels
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Entity\Enemy\Inky.cpp(28,2): warning C4102: 'Up': unreferenced label
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Entity\Enemy\Inky.cpp(32,2): warning C4102: 'Down': unreferenced label
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Entity\Enemy\Inky.cpp(36,2): warning C4102: 'Left': unreferenced label
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Entity\Enemy\Inky.cpp(40,2): warning C4102: 'Right': unreferenced label
+  Pinky.cpp
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Tile.h(16,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  Blinky.cpp
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Tile.h(16,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  Debug.cpp
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Tile.h(16,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  Enemy.cpp
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Tile.h(16,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Entity\Enemy\Enemy.cpp(27,28): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+  Pathfinding.cpp
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Tile.h(16,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  Animation.cpp
+  Animator.cpp
+  Entity.cpp
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Tile.h(16,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  GameManager.cpp
+  main.cpp
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Tile.h(16,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  Pacman.cpp
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Tile.h(16,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Entity\Pacman\Pacman.cpp(24,28): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Snack.cpp
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Tile.h(16,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  State.cpp
+  Button.cpp
+  Generating Code...
+D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Audio\AudioManager.cpp(135): warning C4715: 'AudioManager::IsPlayingAudio': not all control paths return a value
+  CSAI_151FinalProject.vcxproj -> D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\x64\Debug\CSAI_151FinalProject.exe
