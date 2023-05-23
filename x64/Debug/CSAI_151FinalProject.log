@@ -1,8 +1,0 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Pacman-Clone.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Pinky.cpp
-D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Tile.h(16,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-  Snack.cpp
-D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\Src\Tile.h(16,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-  State.cpp
-  Generating Code...
-  CSAI_151FinalProject.vcxproj -> D:\CSAI151_Final_Project_pac_man\CSAI151_Final_Project_pac_man\x64\Debug\CSAI_151FinalProject.exe

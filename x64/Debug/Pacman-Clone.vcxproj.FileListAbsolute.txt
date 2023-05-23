@@ -1,7 +1,0 @@
-D:\OneDrive\DOCUMENTOS\Personal-Projects\Pacman-Clone\x64\Debug\Pacman-Clone.exe
-D:\OneDrive\DOCUMENTOS\Personal-Projects\Pacman-Clone\x64\Debug\Pacman-Clone.pdb
-D:\Google Drive\DOCUMENTOS\Personal-Projects\Pacman-Clone\x64\Debug\Pacman-Clone.exe
-D:\Google Drive\DOCUMENTOS\Personal-Projects\Pacman-Clone\x64\Debug\Pacman-Clone.pdb
-D:\NICOLAS\Personal REPOS\Pacman-Clone\x64\Debug\Pacman-Clone.exe
-C:\Users\actac\OneDrive\Desktop\Pacman-Clone-master\CSAI151_Final_Project\x64\Debug\CSAI_151FinalProject.exe
-D:\CSAI151_Final_Project\x64\Debug\CSAI_151FinalProject.exe

@@ -21,8 +21,8 @@
       <FileName>Src\States\GameState\GameState.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AudioManager" Collapsed="true">
-    <Position X="15" Y="0.75" Width="1.5" />
+  <Class Name="AudioManager">
+    <Position X="14.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AABFAACQAAECAAAAAoAAAAkAAgAAAAAAAAAigAGIAAA=</HashCode>
       <FileName>Src\Audio\AudioManager.h</FileName>
@@ -70,29 +70,29 @@
       <FileName>Src\Entity\Enemy\Enemy.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Animation" Collapsed="true">
-    <Position X="11.5" Y="0.75" Width="1.5" />
+  <Class Name="Animation">
+    <Position X="6.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAEAKAEAADAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Src\Animation\Animation.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Animator" Collapsed="true">
-    <Position X="13.25" Y="0.75" Width="1.5" />
+  <Class Name="Animator">
+    <Position X="8.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAgAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAEAQAAAA=</HashCode>
       <FileName>Src\Animation\Animator.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Entity">
-    <Position X="6.25" Y="0.5" Width="1.5" />
+    <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>UAQAAAAAAIAAAgAEAQAgAQAAAQAAAwAAAAAgBgAAQAA=</HashCode>
       <FileName>Src\Entity\Entity.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GameManager" Collapsed="true">
-    <Position X="13.25" Y="1.75" Width="1.5" />
+  <Class Name="GameManager">
+    <Position X="12" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAEAAACAAAAAAAAAAAAAAAAMAgACAAAQAAA=</HashCode>
       <FileName>Src\GameManager.h</FileName>
@@ -126,57 +126,64 @@
       <FileName>Src\States\State.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Button" Collapsed="true">
-    <Position X="11.5" Y="1.75" Width="1.5" />
+  <Class Name="Button">
+    <Position X="10.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AEIAAAAAAAQAABAAAAAAAAAAAAAAAAAIAAACCAEUFAA=</HashCode>
       <FileName>Src\UI\Button.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Struct Name="sNode" Collapsed="true">
-    <Position X="11.5" Y="3" Width="1.5" />
+  <Struct Name="sNode">
+    <Position X="16" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AABQAQAEAAAACABAAAEAAIAAAAAAAAAAAEAgAAAIAgE=</HashCode>
       <FileName>Src\Pathfinding\Node.h</FileName>
     </TypeIdentifier>
   </Struct>
-  <Struct Name="sTile" Collapsed="true">
-    <Position X="13.25" Y="3" Width="1.5" />
+  <Struct Name="sTile">
+    <Position X="12" Y="3.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="sTile::TileType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Src\Tile.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
     <TypeIdentifier>
       <HashCode>AAAAAABAAAAACAgAAAAAAAAAAAAAAAAAAAAAQABAQAA=</HashCode>
       <FileName>Src\Tile.h</FileName>
     </TypeIdentifier>
   </Struct>
-  <Enum Name="Sounds" Collapsed="true">
-    <Position X="13.25" Y="5" Width="1.5" />
+  <Enum Name="Sounds">
+    <Position X="16" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAQACACAAAAAAAAAAAABAAAAAAgAAAAIAFAAAA=</HashCode>
       <FileName>Src\Audio\AudioAssets.h</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="EnemyState" Collapsed="true">
-    <Position X="15" Y="4.25" Width="1.5" />
+  <Enum Name="EnemyState">
+    <Position X="16" Y="9" Width="1.5" />
     <TypeIdentifier>
       <HashCode>aABAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Src\Entity\Enemy\Enemy.h</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="Directions" Collapsed="true">
-    <Position X="13.25" Y="4.25" Width="1.5" />
+  <Enum Name="Directions">
+    <Position X="16" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAEAAAI=</HashCode>
       <FileName>Src\Entity\Entity.h</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="Entities" Collapsed="true">
-    <Position X="11.5" Y="5" Width="1.5" />
+  <Enum Name="Entities">
+    <Position X="16" Y="12.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BCAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAQAoAAAAA=</HashCode>
       <FileName>Src\Entity\Entity.h</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="button_states" Collapsed="true">
-    <Position X="11.5" Y="4.25" Width="1.5" />
+  <Enum Name="button_states">
+    <Position X="16" Y="10.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAIAAAAAEAAAAA=</HashCode>
       <FileName>Src\UI\Button.h</FileName>
